@@ -23,7 +23,7 @@ function App() {
 					onChange={(event, editor) => {
 						const data = editor.getData()
 						setHTML(data)
-						console.log({ data })
+						console.log({ event, data })
 					}}
 				/>
 				<button onClick={handleSave}>Save</button>
